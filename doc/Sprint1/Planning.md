@@ -17,7 +17,7 @@
 * **Backbone Cables:** All backbone cables use optic fiber monomode 10 due to its immunity to dispersion, resulting in higher data rates and extended cable lengths.
 
 * **Ethernet Network Cables:** For all other Ethernet network cables, Category 7 (CAT7) will be employed, offering higher data rates. Additionally, CAT7 cables feature superior shielding, enhancing reliability by reducing susceptibility to signal loss or disruption caused by electromagnetic interference (EMI).
-
+* **Copper Cable Wiring:** We used the 568A standard for the copper cable wiring, as it is the most widely used standard in the industry.
 # Subtasks assignment
 
 ###  1231492

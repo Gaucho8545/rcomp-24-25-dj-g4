@@ -12,12 +12,12 @@
 
 ## Total Hardware Inventory
 
-| Building | Outlets | CAT7 Cables | Monomode 10 Cables | Access Points |
-|:--------:|:-------:|:-----------:|:------------------:|:-------------:|
-|    1     |   38    |     93      |         7          |       1       |
-|    2     |   58    |     17      |         1          |       1       |
-|    3     |      |          |                   | |
-|  Total   |      |          |                  | |
+| Building | Outlets | CAT7 Cables | Monomode 10 Cables | Access Points | Horizontal Cross-Connects | Intermediate Cross-Connects |
+|:--------:|:-------:|:-----------:|:------------------:|:-------------:|:------------------------:|:--------------------------:|
+|    1     |   64    |     161     |         7          |       2       | 2                        | 1                          |
+|    2     |   154   |     46      |         1          |       2       |2                         | 1                          |
+|    3     |   164   |     188     |         3          |       4       |2                         | 1                          |
+|  Total   |   382   |     395     |         11         |       8       |6                         | 3                          |
 
 ## Taks implementation status
 

@@ -119,7 +119,7 @@ Figure 2 - Floor 1 Cabling Deployment
 | Item                            | Units used |
 |:--------------------------------|:----------:|
 | Outlets                         |     58     |
-| Cables                          |     17     |
+| CAT7 Cables                     |     17     |
 | Monomode 10                     |     1      |
 | Access Points                   |     1      |
 | IC (Intermediate Cross-Connect) |     1      |
@@ -136,3 +136,4 @@ Figure 2 - Floor 1 Cabling Deployment
 | Monomode 10                   |     0      |
 | Access Points                 |     1      |
 | HC (Horizontal Cross-Connect) |     1      |
+| Consolidation Points          |     3      |
