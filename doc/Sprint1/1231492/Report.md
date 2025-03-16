@@ -107,9 +107,9 @@ Each can provide wireless coverage within 25 meters radius, so to ensure that th
 
 ### Cable Measurements
 #### Room 1.0.1 1.0.2 1.0.3
-|        | Cable Lenght (meters) |
-|-------:|:---------------------:|
-  Total  |      29.73            |
+|       | Cable Lenght (meters) |
+|------:|:---------------------:|
+ Total |      29.73            |
 
 
 
