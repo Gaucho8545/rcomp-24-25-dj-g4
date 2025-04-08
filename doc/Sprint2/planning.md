@@ -58,20 +58,19 @@ The VTP domain name we decided to adopt was "r2425djg4"
 - Building 3: 172.21.20.0 /22
 
 
-### Backbone (Alterar)
+### Backbone
 |   VLAN   | VLAN ID | Nodes | Mask | 
 |:--------:|:-------:|:-----:|:----:|
-| Backbone |   341   |  200  |  24  |  
+| Backbone |   406   |  254  |  24  |  
 
-### Building 1 (Alterar)
-
+### Building 1
 | VLAN    | VLAN ID | Nodes | Mask | 
 |:-------------|:-------:|:-----:|:-----|
-| Ground Floor |   342   |  50   | 26   |
-| Floor One    |   343   |  50   | 26   |
-| Wi-fi        |   344   |  80   | 25   |
-| DMZ          |   345   |  100  | 25   |
-| VoIP         |   346   |  67   | 25   |
+| Ground Floor |   407   |  50   | 26   |
+| Floor One    |   408   |  50   | 26   |
+| Wi-fi        |   409   |  80   | 25   |
+| DMZ          |   410   |  100  | 25   |
+| VoIP         |   411   |  67   | 25   |
 
 ### Building 2 (Alterar)
 | VLAN    | VLAN ID | Nodes | Mask | 
