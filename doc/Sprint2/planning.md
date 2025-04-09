@@ -52,43 +52,47 @@ The VTP domain name we decided to adopt was "r2425djg4"
 
 ### Global network: 10.25.32.0 /20
 ### Networks:
-- Backbone  : 172.21.30.0 /24
-- Building 1: 172.21.28.0 /23
-- Building 2: 172.21.24.0 /22
-- Building 3: 172.21.20.0 /22
+- Backbone  : 10.25.32.0 /24
+- ![img_3.png](img_3.png)
+- Building 1: 10.25.32.0 /23
+- ![img_2.png](img_2.png)
+- Building 2: 10.25.32.0 /22
+- ![img_1.png](img_1.png)
+- Building 3: 10.25.36.0 /22
+- ![img.png](img.png)
 
 
-### Backbone
+### Backbone (Ja feito)
 |   VLAN   | VLAN ID | Nodes | Mask | 
 |:--------:|:-------:|:-----:|:----:|
-| Backbone |   406   |  254  |  24  |  
+| Backbone |   406   |  220  |  24  |  
 
-### Building 1
+### Building 1 (Ja feito)
 | VLAN    | VLAN ID | Nodes | Mask | 
 |:-------------|:-------:|:-----:|:-----|
-| Ground Floor |   407   |  50   | 26   |
-| Floor One    |   408   |  50   | 26   |
-| Wi-fi        |   409   |  80   | 25   |
-| DMZ          |   410   |  100  | 25   |
-| VoIP         |   411   |  67   | 25   |
+| Ground Floor |   407   |  40   | 26   |
+| Floor One    |   408   |  45   | 26   |
+| Wi-fi        |   409   |  95   | 25   |
+| DMZ          |   410   |  110  | 25   |
+| VoIP         |   411   |  70   | 25   |
 
-### Building 2 (Alterar)
+### Building 2 (Ja feito)
 | VLAN    | VLAN ID | Nodes | Mask | 
 |:-------------|:-------:|:-----:|:-----|
-| Ground Floor |   347   |  90   | 25   |
-| Floor One    |   348   |  120  | 25   |
-| Wireless     |   349   |  220  | 24   |
-| DMZ          |   350   |  50   | 26   |
-| VoIP         |   351   |  110  | 25   |
+| Ground Floor |   412   |  100  | 25   |
+| Floor One    |   413   |  110  | 25   |
+| Wireless     |   414   |  200  | 24   |
+| DMZ          |   415   |  60   | 26   |
+| VoIP         |   416   |  120  | 25   |
 
-### Building 3 (Alterar)
+### Building 3 (Ja feito)
 | VLAN         | VLAN ID | Nodes | Mask | 
 |:-------------|:-------:|:-----:|:-----|
-| Floor One    |   352   |  130  | 24   |
-| Wi-Fi        |   353   |  200  | 24   |
-| VoIP         |   354   |  180  | 24   |
-| DMZ          |   355   |  45   | 26   |
-| Ground Floor |   356   |  110  | 25   |
+| Floor One    |   417   |  135  | 24   |
+| Wi-Fi        |   418   |  220  | 24   |
+| VoIP         |   419   |  170  | 24   |
+| DMZ          |   420   |  50   | 26   |
+| Ground Floor |   421   |  115  | 25   |
 
 
 
@@ -96,10 +100,10 @@ The VTP domain name we decided to adopt was "r2425djg4"
 
 
 
-### Backbone (Alterar)
-| ID  | Network prefix |     IPV4      |   First IP    |    Last IP    |   Broadcast   |
-|:---:|:--------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| 341 |      /24       |  172.21.30.0  |  172.21.30.1  | 172.21.30.254 | 172.21.30.255 |
+### Backbone (Ja feito)
+| ID  | Network prefix |     IPV4     |   First IP    |    Last IP    |   Broadcast   |
+|:---:|:--------------:|:------------:|:-------------:|:-------------:|:-------------:|
+| 341 |      /24       |  10.25.32.0  |  10.25.32.1  | 10.25.32.254 | 10.25.32.255 |
 
 ### Building 1 (Alterar)
 | ID  | Network prefix |     IPV4      |   First IP    |    Last IP    |   Broadcast   |
