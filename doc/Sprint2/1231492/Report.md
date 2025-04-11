@@ -8,7 +8,10 @@
 | Horizontal Cross-connect   | Switch PT-Empty | B1_S1_HC     |
 | Horizontal Cross-connect   | Switch PT-Empty | B1_S3_HC     |
 | Main Cross-connect         | Switch PT-Empty | B1_S2_MC     |
-| Consolidation Point        | Switch PT-Empty | B1_S4_CP     |
+| Consolidation Point        | Switch PT-Empty | B1_S4_CP0    |
+| Consolidation Point        | Switch PT-Empty | B1_S4_CP1    |
+| Consolidation Point        | Switch PT-Empty | B1_S4_CP2    |
+| Consolidation Point        | Switch PT-Empty | B1_S4_CP3    |
 | Access Point               | Access Point PT | B1_AP        |
 | Router                     | 2811            | B1_RT0       |
 | ISP Router                 | 2811            | B1_ISP       |
