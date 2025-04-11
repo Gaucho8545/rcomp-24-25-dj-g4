@@ -9,15 +9,23 @@
 | Horizontal Cross-connect   | Switch PT-Empty | B1_S3_HC     |
 | Main Cross-connect         | Switch PT-Empty | B1_S2_MC     |
 | Consolidation Point        | Switch PT-Empty | B1_S4_CP0    |
-| Consolidation Point        | Switch PT-Empty | B1_S4_CP1    |
-| Consolidation Point        | Switch PT-Empty | B1_S4_CP2    |
-| Consolidation Point        | Switch PT-Empty | B1_S4_CP3    |
+| Consolidation Point        | Switch PT-Empty | B1_S5_CP1    |
+| Consolidation Point        | Switch PT-Empty | B1_S6_CP2    |
+| Consolidation Point        | Switch PT-Empty | B1_S7_CP3    |
 | Access Point               | Access Point PT | B1_AP        |
 | Router                     | 2811            | B1_RT0       |
 | ISP Router                 | 2811            | B1_ISP       |
 | PC                         | PC_PT           | B1_PC0       |
 | PC                         | PC_PT           | B1_PC1       |
+| PC                         | PC_PT           | B1_PC2       |
+| PC                         | PC_PT           | B1_PC3       |
+| PC                         | PC_PT           | B1_PC4       |
+| PC                         | PC_PT           | B1_PC5       |
+| PC                         | PC_PT           | B1_PC6       |
+| PC                         | PC_PT           | B1_PC7       |
+| PC                         | PC_PT           | B1_PC8       |
 | Laptop                     | Laptop_PT       | B1_LP0       |
+| Laptop                     | Laptop_PT       | B1_LP1       |
 | Server                     | Server_PT       | B1_SEV0      |
 | Phone                      | 7960            | B1_PH0       |
 
