@@ -52,7 +52,7 @@ The VTP domain name we decided to adopt was "r2425djg4"
 
 ### Global network: 10.25.320.0 /20
 ### Networks:
-- Backbone  : 10.25.320.0 /24
+- Backbone  : 10.25.32.0 /24
 - ![img_3.png](img_3.png)
 - Building 1: 10.25.33.0 /23
 - ![img_2.png](img_2.png)
