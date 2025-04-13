@@ -50,16 +50,12 @@ The VTP domain name we decided to adopt was "r2425djg4"
 
 ## IPV4 Addresses
 
-### Global network: 10.25.320.0 /20
+### Global network: 10.25.32.0 /20
 ### Networks:
 - Backbone  : 10.25.32.0 /24
-- ![img_3.png](img_3.png)
 - Building 1: 10.25.33.0 /23
-- ![img_2.png](img_2.png)
 - Building 2: 10.25.323.0 /22
-- ![img_1.png](img_1.png)
 - Building 3: 10.25.36.0 /22
-- ![img.png](img.png)
 
 
 ### Backbone (Ja feito)
