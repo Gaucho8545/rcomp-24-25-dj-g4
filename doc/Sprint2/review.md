@@ -1,15 +1,15 @@
-RCOMP 2023-2024 Project - Sprint 2 review
+RCOMP 2024-2025 Project - Sprint 2 review
 =========================================
 
-### Sprint master: 1212369
+### Sprint master: 1231492
 
 ## 1. Sprint's backlog
 
 | Task ID | Task description                                                                                                                                                                                       | Task's assignee |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | 2.1     | Development of a layer two and layer three Packet Tracer simulation for building 1, encompassing the campus backbone. Integration of every member’s Packet Tracer simulation into a single simulation. | 1231492         |
-| 2.2     | Development of a layer two and layer three Packet Tracer simulation for building 2, encompassing the campus backbone.                                                                                  | 1220952   FALTA NUMERO      |
-| 2.3     | Development of a layer two and layer three Packet Tracer simulation for building 3, encompassing the campus backbone.                                                                                  | 1212369   FALTA NUMERO      |
+| 2.2     | Development of a layer two and layer three Packet Tracer simulation for building 2, encompassing the campus backbone.                                                                                  | 1220834         |
+| 2.3     | Development of a layer two and layer three Packet Tracer simulation for building 3, encompassing the campus backbone.                                                                                  | 1222215         |
 
 # 2. Subtasks assessment #
 
@@ -33,7 +33,7 @@ RCOMP 2023-2024 Project - Sprint 2 review
 | 2.1.14  | Totally implemented with no issues |
 | 2.1.15  | Totally implemented with no issues |
 
-## 1220952 TROCAR NUMERO
+## 1220834
 
 | Task ID | Status                             |
 |---------|------------------------------------|
@@ -49,7 +49,7 @@ RCOMP 2023-2024 Project - Sprint 2 review
 | 2.2.10  | Totally implemented with no issues |
 | 2.2.11  | Totally implemented with no issues |
 
-## 1212369 TROCAR NUMERO
+## 1222215
 
 | Task ID | Status                             |
 |---------|------------------------------------|

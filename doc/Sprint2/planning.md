@@ -6,8 +6,8 @@ RCOMP 2024-2025 Project - Sprint 2 planning
 | Task ID | Task description                                                                                                                                                                                       | Task's assignee |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 | 2.1    | Development of a layer two and layer three Packet Tracer simulation for building 1, encompassing the campus backbone. Integration of every member’s Packet Tracer simulation into a single simulation. | 1231492         |
-| 2.2    | Development of a layer two and layer three Packet Tracer simulation for building 2, encompassing the campus backbone.                                                                                  | (Num de quem faz o B2)        |
-| 2.3    | Development of a layer two and layer three Packet Tracer simulation for building 3, encompassing the campus backbone.                                                                                  | (Num de quem faz o B3)         |
+| 2.2    | Development of a layer two and layer three Packet Tracer simulation for building 2, encompassing the campus backbone.                                                                                  | 1220834         |
+| 2.3    | Development of a layer two and layer three Packet Tracer simulation for building 3, encompassing the campus backbone.                                                                                  | 1222215         |
 
 
 # 2. Technical decisions and coordination
@@ -54,7 +54,7 @@ The VTP domain name we decided to adopt was "r2425djg4"
 ### Networks:
 - Backbone  : 10.25.32.0 /24
 - Building 1: 10.25.33.0 /23
-- Building 2: 10.25.323.0 /22
+- Building 2: 10.25.34.0 /22
 - Building 3: 10.25.36.0 /22
 
 
@@ -73,13 +73,13 @@ The VTP domain name we decided to adopt was "r2425djg4"
 | VoIP         |   411   |  70   | 25   |
 
 ### Building 2 
-| VLAN    | VLAN ID | Nodes | Mask | 
+| VLAN Name    | VLAN ID | Nodes | Mask | 
 |:-------------|:-------:|:-----:|:-----|
-| Ground Floor |   412   |  100  | 25   |
-| Floor One    |   413   |  110  | 25   |
-| Wireless     |   414   |  200  | 24   |
+| Floor One    |   412   |  110  | 25   |
+| WiFi         |   413   |  200  | 24   |
+| VoIP         |   414   |  120  | 25   |
 | DMZ          |   415   |  60   | 26   |
-| VoIP         |   416   |  120  | 25   |
+| Ground Floor |   416   |  100  | 25   |
 
 ### Building 3 
 | VLAN         | VLAN ID | Nodes | Mask | 
@@ -113,14 +113,14 @@ The VTP domain name we decided to adopt was "r2425djg4"
 | 407 |      /26       |    10.25.33.192    | 10.25.33.193 | 10.25.33.254 | 10.25.33.255 |
 
 
-### Building 2 (Alterar)
-| ID  | Network prefix |     IPV4      |   First IP    |    Last IP    |   Broadcast   |
-|:---:|:--------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| 347 |      /25       |  172.21.26.0  |  172.21.26.1  | 172.21.26.126 | 172.21.26.127 |
-| 348 |      /25       |  172.21.25.0  |  172.21.25.1  | 172.21.25.126 | 172.21.25.127 |
-| 349 |      /24       |  172.21.24.0  |  172.21.24.1  | 172.21.24.254 | 172.21.24.255 |
-| 350 |      /26       | 172.21.26.128 | 172.21.26.129 | 172.21.26.190 | 172.21.26.191 |
-| 351 |      /25       | 172.21.25.128 | 172.21.25.129 | 172.21.25.254 | 172.21.25.255 |
+### Building 2
+| ID  | Network Prefix |     IPV4     |   First IP   |   Last IP    |  Broadcast   |
+|:---:|:--------------:|:------------:|:------------:|:------------:|:------------:|
+| 412 |      /25       |  10.25.34.0  |  10.25.34.1  | 10.25.34.126 | 10.25.34.127 |
+| 413 |      /24       | 10.25.34.128 | 10.25.34.129 | 10.25.35.126 | 10.25.35.127 |
+| 414 |      /25       | 10.25.35.128 | 10.25.35.129 | 10.25.35.254 | 10.25.35.255 |
+| 415 |      /26       |  10.25.35.0  |  10.25.35.1  | 10.25.35.62  | 10.25.35.63  |
+| 416 |      /25       | 10.25.34.64  | 10.25.34.65  | 10.25.34.126 | 10.25.34.127 |
 
 ### Building 3 
 | VLAN         | VLAN ID | Mask | Subnet Address | Broadcast     | Gateway IP    | Host Range                 |
@@ -158,7 +158,7 @@ The VTP domain name we decided to adopt was "r2425djg4"
 | 2.1.15  | Document and justify the entire process                                           |
 
 
-###   (Num de quem faz o B2)   (Alterar)
+###   1220834
 
 | Task ID | Task description                                                                  |
 |---------|-----------------------------------------------------------------------------------|
@@ -175,7 +175,7 @@ The VTP domain name we decided to adopt was "r2425djg4"
 | 2.2.11  | Document and justify the entire process                                           |
 
 
-###  (Num de quem faz o B3) (Alterar)
+###  1222215
 
 | Task ID | Task description                                                                  |
 |---------|-----------------------------------------------------------------------------------|
@@ -190,7 +190,3 @@ The VTP domain name we decided to adopt was "r2425djg4"
 | 2.3.9   | Configure IPs on PCs and Laptops                                                  |
 | 2.3.10  | Create subInterfaces on the IC_Router                                             |
 | 2.3.11  | Document and justify the entire process                                           |
-
-
-
-
