@@ -56,25 +56,6 @@ ___
 
 
 ___
-## Static Routes ## (Que é isto????)
-| Building | IP Route                              |
-|:--------:|:--------------------------------------|
-|    2     | 172.21.24.0 255.255.252.0 172.21.30.2 |
-|    3     | 172.21.20.0 255.255.252.0 172.21.30.3 |
-|    4     | 172.21.16.0 255.255.252.0 172.21.30.4 |
-
-## Detailed Explanation for the creation of the Static Routes ##
-
-### Building 2  ALTERAR PARA O IP CERTO
-**Ip route 172.21.24.0 255.255.252.0 172.21.30.2**
-
-Explanation: Any packet destined for the network 10.25.32.0/22 must be routed to the IP address of the Building 2 router    ALTERAR PARA O ROUTER CERTO(172.21.30.2).
-
-### Building 3  ALTERAR PARA O IP CERTO
-**ip route 172.21.20.0 255.255.252.0 172.21.30.3**
-
-Explanation: Any packet destined for the network 10.25.36.0/22 must be routed to the IP address of the Building 3 router       ALTERAR PARA O ROUTER CERTO(172.21.30.3).
-___
 
 ## Detailed Explanation for the creation of Subnets:
 
