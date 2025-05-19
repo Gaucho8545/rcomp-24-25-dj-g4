@@ -1,4 +1,4 @@
-RCOMP 2024-2025 Project - Sprint 3 - Member [INSERE_O_TEU_NÚMERO] folder
+RCOMP 2024-2025 Project - Sprint 3 - 1231492 
 =========================================================================
 
 ### Building 1
@@ -95,8 +95,6 @@ dial-peer voice 30 voip
 
 > Exemplo de FQDN: `ns.rcomp-24-25-cc-gn`
 
-> Ver imagem DNS:  
-> ![dns.jpg](./dns-building1.jpg)
 
 #### NAT
 
