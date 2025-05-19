@@ -87,31 +87,31 @@ dial-peer voice 30 voip
 
 #### DNS
 
-- Foi criado o domínio raiz da equipa: `rcomp-24-25-cc-gn`.
+- Foi criado o domínio raiz da equipa: `rcomp-24-25-dj-g4`.
 - O servidor DNS foi configurado com:
-  - Registo `A` → `server1.rcomp-24-25-cc-gn`
-  - CNAME → `www`, `web`, `dns`
+  - Registo `A` → `ns.rcomp-24-25-dj-g4`
+  - CNAME → `www`, `web`
   - NS e glue records para os servidores DNS dos outros edifícios.
 
 > Exemplo de FQDN: `ns.rcomp-24-25-cc-gn`
 
 
-#### NAT
+#### NAT 
 
 - NAT estático foi configurado para redirecionar HTTP/HTTPS para o servidor da DMZ:
 
 ```
-ip nat inside source static tcp 10.25.32.129 80 interface GigabitEthernet0/0 80
-ip nat inside source static tcp 10.25.32.129 443 interface GigabitEthernet0/0 443
+ip nat inside source static tcp 10.25.32.129 interface FastEthernet0/0
+ip nat inside source static tcp 10.25.32.129  interface FastEthernet0/0 
 ```
 
 - Interfaces NAT:
 
 ```
-interface GigabitEthernet0/0
+interface FastEthernet0/0
  ip nat outside
 
-interface GigabitEthernet0/1
+interface FastEthernet0/1
  ip nat inside
 ```
 
@@ -125,19 +125,4 @@ interface GigabitEthernet0/1
   - Permitir todo o resto
 
 ```
-access-list 100 deny ip 10.25.32.0 0.0.1.255 any
-access-list 100 deny ip 10.25.33.0 0.0.0.255 any
-access-list 100 permit icmp any any echo
-access-list 100 permit icmp any any echo-reply
-access-list 100 permit tcp any host 10.25.32.129 eq 80
-access-list 100 permit tcp any host 10.25.32.129 eq 443
-access-list 100 permit udp any host 10.25.32.129 eq 53
-access-list 100 permit tcp any host 10.25.32.129 eq 53
-access-list 100 permit udp any eq 67 any eq 68
-access-list 100 permit udp any eq 69 any
-access-list 100 permit ospf any any
-access-list 100 permit ip any any
-!
-interface GigabitEthernet0/0
- ip access-group 100 in
-```
+
