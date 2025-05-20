@@ -1,0 +1,158 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+ip dhcp excluded-address 10.25.34.1 10.25.34.10
+ip dhcp excluded-address 10.25.34.129 10.25.34.139
+ip dhcp excluded-address 10.25.35.1 10.25.35.10
+ip dhcp excluded-address 10.25.35.129 10.25.35.139
+!
+ip dhcp pool VLAN412
+ network 10.25.34.0 255.255.255.128
+ default-router 10.25.34.1
+ dns-server 10.25.36.2
+ domain-name rcomp
+ip dhcp pool VLAN413
+ network 10.25.34.0 255.255.254.0
+ default-router 10.25.34.129
+ dns-server 10.25.36.2
+ domain-name rcomp
+ip dhcp pool VLAN414
+ network 10.25.35.128 255.255.255.128
+ default-router 10.25.35.129
+ option 150 ip 10.25.36.2
+ dns-server 10.25.36.2
+ domain-name rcomp
+ip dhcp pool VLAN416
+ network 10.25.35.0 255.255.255.128
+ default-router 10.25.35.1
+ dns-server 10.25.36.2
+ domain-name rcomp
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10176R2E-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.412
+ encapsulation dot1Q 412
+ ip address 10.25.34.1 255.255.255.128
+!
+interface FastEthernet0/0.413
+ encapsulation dot1Q 413
+ ip address 10.25.34.129 255.255.255.128
+!
+interface FastEthernet0/0.414
+ encapsulation dot1Q 414
+ ip address 10.25.35.129 255.255.255.128
+!
+interface FastEthernet0/0.415
+ encapsulation dot1Q 415
+ ip address 10.25.36.1 255.255.255.192
+ ip nat inside
+!
+interface FastEthernet0/0.416
+ encapsulation dot1Q 416
+ ip address 10.25.35.1 255.255.255.128
+!
+interface FastEthernet0/1
+ ip address 10.25.32.1 255.255.255.0
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 2.2.2.2
+ log-adjacency-changes
+ network 10.25.34.0 0.0.0.127 area 2
+ network 10.25.35.128 0.0.0.127 area 2
+ network 10.25.36.0 0.0.0.63 area 2
+ network 10.25.35.0 0.0.0.127 area 2
+ network 10.25.34.128 0.0.0.127 area 2
+ network 10.0.2.0 0.0.0.255 area 0
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+telephony-service
+ max-ephones 10
+ max-dn 10
+ ip source-address 10.25.35.129 port 2000
+ auto assign 1 to 2
+!
+ephone-dn 1
+ number 2001
+!
+ephone-dn 2
+ number 2002
+!
+ephone 1
+ device-security-mode none
+ mac-address 0060.7063.46C3
+ type 7960
+ button 1:1
+!
+ephone 2
+ device-security-mode none
+ mac-address 00D0.D300.5D01
+ type 7960
+ button 1:2
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
