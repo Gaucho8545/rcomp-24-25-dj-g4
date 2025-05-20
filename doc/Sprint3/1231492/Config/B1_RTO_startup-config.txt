@@ -1,0 +1,158 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+ip dhcp excluded-address 10.25.33.193
+ip dhcp excluded-address 10.25.33.129
+ip dhcp excluded-address 10.25.33.1
+ip dhcp excluded-address 10.25.32.1
+ip dhcp excluded-address 10.25.32.129
+ip dhcp excluded-address 10.25.32.130
+!
+ip dhcp pool VLAN407
+ network 10.25.33.192 255.255.255.192
+ default-router 10.25.33.193
+ dns-server 10.25.32.130
+ domain-name building-1.rcomp-24-25-dj-g4
+ip dhcp pool VLAN408
+ network 10.25.33.128 255.255.255.192
+ default-router 10.25.33.129
+ dns-server 10.25.32.130
+ domain-name building-1.rcomp-24-25-dj-g4
+ip dhcp pool VLAN409
+ network 10.25.33.0 255.255.255.128
+ default-router 10.25.33.1
+ dns-server 10.25.32.130
+ domain-name building-1.rcomp-24-25-dj-g4
+ip dhcp pool VLAN411
+ network 10.25.32.0 255.255.255.128
+ default-router 10.25.32.130
+ option 150 ip 10.25.32.1
+ domain-name building-1.rcomp-24-25-dj-g4
+ip dhcp pool VLAN49
+ network 10.25.33.0 255.255.255.128
+ default-router 10.25.33.1
+ dns-server 10.25.32.130
+ domain-name building-1.rcomp-24-25-dj-g4
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX101705XZ-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ ip access-group 100 in
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.407
+ encapsulation dot1Q 407
+ ip address 10.25.33.193 255.255.255.192
+!
+interface FastEthernet0/0.408
+ encapsulation dot1Q 408
+ ip address 10.25.33.129 255.255.255.192
+!
+interface FastEthernet0/0.409
+ encapsulation dot1Q 409
+ ip address 10.25.33.1 255.255.255.128
+!
+interface FastEthernet0/0.410
+ encapsulation dot1Q 410
+ ip address 10.25.32.129 255.255.255.128
+!
+interface FastEthernet0/0.411
+ encapsulation dot1Q 411
+ ip address 10.25.32.1 255.255.255.128
+!
+interface FastEthernet0/1
+ ip address 192.168.0.2 255.255.255.252
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 1.1.1.1
+ log-adjacency-changes
+ network 10.25.32.0 0.0.1.255 area 1
+ network 192.168.0.0 0.0.0.3 area 0
+ default-information originate
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 100 deny ip 10.25.32.0 0.0.1.255 any
+access-list 100 deny ip 10.25.33.0 0.0.0.255 any
+access-list 100 permit tcp any host 10.25.32.129 eq www
+access-list 100 permit tcp any host 10.25.32.129 eq 443
+access-list 100 permit udp any host 10.25.32.129 eq domain
+access-list 100 permit tcp any host 10.25.32.129 eq domain
+access-list 100 deny ip any 10.25.32.128 0.0.0.127
+access-list 100 permit udp any eq bootps any eq bootpc
+access-list 100 permit udp any eq tftp any
+access-list 100 permit ospf any any
+!
+!
+!
+!
+!
+telephony-service
+ max-ephones 2
+ max-dn 2
+ ip source-address 10.25.32.1 port 2000
+ auto assign 1 to 2
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
